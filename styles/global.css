@@ -52,10 +52,14 @@
 }
 
 body {
+ 
   font-size: 1.6rem;
+
+  border: 1rem solid var(--shape-background);
+  border-radius: 2rem;
+
+  overflow: hidden;
+
 }
 
-h1 {
-  background-color: red;
-  font: var(--logo);
-}
+
