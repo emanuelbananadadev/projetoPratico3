@@ -1,11 +1,10 @@
 #page {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 31% 69%;
   height: 100vh;
   overflow: hidden;
 
-  border: 2rem solid black;
-  border-radius: 1.2rem;
+  padding: 10rem;
 }
 
 aside {
@@ -15,11 +14,18 @@ aside {
   background-position: center;
   background-size: cover;
   /* height: 100vh; */
+  border-top: 2rem solid black;
+  border-left: 2rem solid black;
+  border-bottom: 2rem solid black;
+  border-radius: 1.2rem 0 0 1.2rem;
+
+
 }
 
 aside > div img {
   max-height: 4.8rem;
   margin-bottom: 1.6rem;
+  
 }
 
 aside h1 {
@@ -39,7 +45,9 @@ main {
   background-color: var(--shape-background);
   padding: 8rem 13rem;
 
-  border-left: 2rem solid black;
+  border-radius: 0 1.2rem 1.2rem 0;
+  border: 2rem solid black;
+
 }
 
 main h1 {
