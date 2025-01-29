@@ -60,7 +60,18 @@ body {
   height: 100vh;
 
   background-color: #29292E;
-  border-radius: 4rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.fles-1 {
+  flex: 1;
+}
+
+.gap-16 {
+  gap: 1.6rem;
 }
 
 

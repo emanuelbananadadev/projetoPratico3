@@ -10,7 +10,9 @@
   color: var(--text-body);
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-wrapper textarea,
+.toggle-container {
   appearance: none;
   width: 100%;
 
@@ -21,4 +23,85 @@
   border: 1px solid var(--input-stroke);
 
   margin-bottom: 1.6rem;
+}
+
+.input-wrapper textarea {
+  height: 13.6rem;
+  
+}
+
+.wrapper {
+  width: 100%;
+} 
+
+.wrapper .input-wrapper {
+  flex: 1;
+}
+
+.input-wrapper input::placeholder,
+.input-wrapper input[type="date"],
+.input-wrapper textarea {
+  color: var(--input-placeholder);
+  font: var(--body-md);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.toggle-container {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  padding: 0;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  flex: 1;
+  padding: 1.1rem 1.8rem;
+  
+  
+  /* background-color: var(--input-base);
+  border: 1px solid var(--input-stroke); */
+  cursor: pointer;
+}
+
+.toggle svg  {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: cover;
+}
+
+.toggle span {
+  font: var(--body-sm);
+  color: var(--text-heading);
+}
+
+.toggle:has(input:checked) {
+  border: none;
+  border-radius: .4rem;
+  background-color: var(--input-stroke);
+  
+  &.toggle span {
+    font-weight: 700;
+  }
+
+  &.toggle svg path {
+    stroke: var(--brand-light);
+  }
+
 }
