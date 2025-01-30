@@ -27,6 +27,7 @@
 
 .input-wrapper textarea {
   height: 13.6rem;
+  margin-bottom: 5rem;
   
 }
 
@@ -72,7 +73,6 @@ input-wrapper {
   justify-content: center;
   gap: .5rem;
   flex: 1;
-  padding: 1.1rem 1.8rem;
   
   
   /* background-color: var(--input-base);

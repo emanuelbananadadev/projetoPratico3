@@ -1,0 +1,26 @@
+
+.color-wrapper h2 {
+  font: var(--body-sm);
+  color: white;
+  margin-bottom: 1.6rem;
+}
+
+.colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color {
+  width:6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1rem solid var(--shape-button);
+  cursor: pointer;
+
+  margin-bottom: 2.8rem;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
