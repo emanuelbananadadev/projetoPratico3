@@ -1,0 +1,93 @@
+ul {
+  display: grid;
+  gap: .8rem;
+  margin-bottom: 4.8rem;
+
+  & .square {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--input-base);
+    cursor: pointer;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: .4rem;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+
+    & input[type="checkbox"] {
+      display: none;
+    }
+
+    &:hover {
+      border: 1px solid var(--brand-light);
+      & svg {
+        opacity: 1;
+      }
+    }
+
+    & svg {
+      width: 2rem;
+      height: 2rem;
+      opacity: 0;
+
+      & path {
+        stroke: var(--brand-light);
+      }
+    }
+  }
+
+  & li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    list-style: none;
+    font: var(--body-sm);
+    color: var(--text-body);
+
+
+    & strong {
+      color: var(--brand-light);
+      font: var(--body-sm);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+
+button {
+  display: flex;
+  gap: 1.2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.4rem 2rem;
+  border-radius: .8rem;
+  background-color: var(--brand-dark);
+  margin-inline-start: auto;
+  cursor: pointer;
+
+  & span {
+    font: var(--body-md);
+    font-weight: 700;
+    color: var(--text-heading);
+  }
+
+}
+
+button {
+  transition: all 500ms;
+}
+
+button:hover {
+  transform: scale(1.1);
+  filter: brightness(1.4);
+
+}
+
+
+

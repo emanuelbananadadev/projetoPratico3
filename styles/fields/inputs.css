@@ -121,7 +121,7 @@ input-wrapper {
   border: 1px solid var(--input-stroke);
 
   position: relative;
-
+  cursor: pointer;
 }
 
 .btn-input .circle {
@@ -136,10 +136,15 @@ input-wrapper {
   cursor: pointer;
 }
 
+.btn-input:has(input:checked) label:nth-child(2) {
+  background-color: var(--brand-light);
+  border: 1px solid var(--input-stroke);
+  transition: 0.3s;
+}
 
 .btn-input input:checked + .circle {
   left: 35px;
-  background-color: green;
+  background-color: var(--text-heading);
 }
 
 .btn-input span::after {
